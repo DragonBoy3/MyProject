@@ -1,8 +1,9 @@
+#define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>
 #include "chapter6.h"
 #include <malloc.h>
 #include <memory.h>
-using namespace std;
+
 
 //Cpoint
 void puddingleos::Cpoint::printfProtected() {
@@ -221,4 +222,113 @@ int validt(int N, int* Delay, int a, int b, int k) {
 		return -1;
 	int Delay_ab = Delay[(a - 1) * N + b - 1];
 	return k > Delay_ab ? (k - Delay_ab-1) : -1;
+}
+
+void puddingleos2::CBase::print() {
+	cout << "CBase: print()..." << endl;
+}
+
+puddingleos2::Obj::Obj(int k) :j(k), i(j) {};//构造函数
+void puddingleos2::Obj::print() {
+	cout << i << endl << j << endl;
+}
+
+int puddingleos2::Myclass::Sum = 0;//Myclass类的静态成员变量为类的全局变量，继承该类的所有对象均可访问
+puddingleos2::Myclass::Myclass(int a, int b, int c) :A(a), B(b), C(c) {
+	Num = A + B + C;
+	Sum = A + B + C;
+};
+
+void puddingleos2::Myclass::GetNumber() {
+	cout << "Number = " << Num << endl;
+}
+
+void puddingleos2::Myclass::GetSum() {
+	cout << "Sum = " << Sum << endl;
+}
+puddingleos2::Test1::Test1(int n) {
+	num = n;
+}
+puddingleos2::Test2::Test2(int n) {
+	num = n;
+}
+
+puddingleos2::Number::Number() :type("void") {};
+puddingleos2::Number::Number(int) :type("int") {};
+puddingleos2::Number::Number(short) :type("short") {};
+
+void puddingleos2::Show(const Number& n) {
+	cout << n.type << endl;
+}
+//B
+int puddingleos2::B::count = 0;
+puddingleos2::B::B() {
+	count++;
+	cout << "default constructor" << endl;
+};
+puddingleos2::B::B(int i) :data(i) {
+	count++;
+	cout << "constructor by parameter" << data << endl;
+};
+puddingleos2::B::B(const B& t) {
+	count++;
+	data = t.data;
+	cout << "copy constructor " << data << endl;
+};
+puddingleos2::B::~B() {
+	count--;
+	cout << "Destroy constructor" << endl;
+	print();
+};
+void puddingleos2::B::print() {
+	cout << "count = " << count << endl;
+}
+//play
+puddingleos2::B puddingleos2::play(B b) {
+	b.print();
+	return b;
+}
+puddingleos2::B puddingleos2::playx(B& b) {
+	b.print();
+	return b;
+}
+
+//MyString
+puddingleos2::MyString::MyString() {};
+puddingleos2::MyString::MyString(char* s) {
+	str = new char[strlen(s) + 1];
+	strcpy(str, s);
+}
+puddingleos2::MyString::~MyString() {
+	delete[]str;
+}
+puddingleos2::MyString& puddingleos2::MyString::operator=(puddingleos2::MyString& string) {
+	if (this == &string)//重载自身则直接返回MyString类的指针
+		return *this;
+	if (str != NULL) {//否则将string.str赋值给this.str，并返回this的指针（引用本质上为指针）
+		delete[] str;
+	}
+	str = new char[strlen(string.str) + 1];
+	strcpy(str, string.str);
+	return *this;
+}
+//puddingleos2::MyString& puddingleos2::MyString::operator+(puddingleos2::MyString& string) {
+//	char* temp = str;//字符串拼接，重载“+”（改变被加对象）
+//	str = new char[strlen(temp) + strlen(string.str) + 1];
+//	strcpy(str, temp);
+//	delete[]temp;
+//	strcat(str, string.str);
+//	return *this;
+//}
+puddingleos2::MyString& puddingleos2::MyString::operator+(puddingleos2::MyString& string) {
+	char* s_t = (char*)"";
+	MyString* pString = new puddingleos2::MyString(s_t);//重载+(不改变被加对象，在堆中新建一个构造)
+	pString->str = new char[strlen(str) + strlen(string.str) + 1];
+	strcpy(pString->str, str);
+	strcat(pString->str, string.str);
+	return *pString;
+}
+
+void puddingleos2::MyString::print() {
+	cout << str << endl;
 }
