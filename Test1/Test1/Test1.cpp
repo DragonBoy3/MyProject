@@ -223,21 +223,21 @@ int main() {
 	//cout << "Empty=" << s.IsEmpty() << endl;
 	//return 0;
 
-	////test3 中序遍历（递归与非递归）
-	//int num[] = { 5,3,7,2,4,6,8,1 };
-	//lgd::Tree tree(num, 8);
-	//cout << "InOder: ";
-	//tree.InOrderTree();
-	//cout << "\nInOrderUnRec: ";
-	//tree.InOrderTreeUnRec();
-	//cout << "\nPreOrder: ";
-	//tree.PreOrderTree();
-	//cout << "\nPreOrderUnRec: ";
-	//tree.PreOrderTreeUnRec();
-	//cout << "\nPostOrder: ";
-	//tree.PostOrderTree();
-	//cout << "\nPostOrderUnRec: ";
-	//tree.PostOrderTreeUnRec();
+	//test3 中序遍历（递归与非递归）
+	int num[] = { 5,3,7,2,4,6,8,1 };
+	lgd::Tree tree(num, 8);
+	cout << "InOder: ";
+	tree.InOrderTree();
+	cout << "\nInOrderUnRec: ";
+	tree.InOrderTreeUnRec();
+	cout << "\nPreOrder: ";
+	tree.PreOrderTree();
+	cout << "\nPreOrderUnRec: ";
+	tree.PreOrderTreeUnRec();
+	cout << "\nPostOrder: ";
+	tree.PostOrderTree();
+	cout << "\nPostOrderUnRec: ";
+	tree.PostOrderTreeUnRec();
 
 	//cout << lgd::max(1, 2) << endl;
 	//cout << lgd::max(1.1f, 2.2f) << endl;//隐式调用float类型的max
@@ -271,16 +271,16 @@ int main() {
 	//cout << "after insert sort: ";
 	//print_array(a, sizeof(a) / sizeof(a[0]));
 
-	int N, a, b, k, t;
-	scanf("%d\n", &N);
-	int* Delay;
-	Delay = (int*)malloc(sizeof(int)*N*N);
-	for (int i = 0; i < N * N; i++) {
-		scanf("%d", &Delay[i]);
-	}
-	scanf("%d %d %d", &a, &b, &k);
-	t = validt(N, Delay, a, b, k);
-	printf("The Max Delay is %d", t);
+	//int N, a, b, k, t;
+	//scanf("%d\n", &N);
+	//int* Delay;
+	//Delay = (int*)malloc(sizeof(int)*N*N);
+	//for (int i = 0; i < N * N; i++) {
+	//	scanf("%d", &Delay[i]);
+	//}
+	//scanf("%d %d %d", &a, &b, &k);
+	//t = validt(N, Delay, a, b, k);
+	//printf("The Max Delay is %d", t);
 
 
 	return 0;

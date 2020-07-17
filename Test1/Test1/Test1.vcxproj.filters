@@ -21,10 +21,22 @@
     <ClCompile Include="chapter6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="chapter8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="chapter9.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter6.h">
-      <Filter>源文件</Filter>
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chapter8.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="chapter9.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
