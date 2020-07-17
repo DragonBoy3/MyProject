@@ -271,16 +271,16 @@ int main() {
 	//cout << "after insert sort: ";
 	//print_array(a, sizeof(a) / sizeof(a[0]));
 
-	//int N, a, b, k, t;
-	//scanf("%d\n", &N);
-	//int* Delay;
-	//Delay = (int*)malloc(sizeof(int)*N*N);
-	//for (int i = 0; i < N * N; i++) {
-	//	scanf("%d", &Delay[i]);
-	//}
-	//scanf("%d %d %d", &a, &b, &k);
-	//t = validt(N, Delay, a, b, k);
-	//printf("The Max Delay is %d", t);
+	int N, a, b, k, t;
+	scanf("%d\n", &N);
+	int* Delay;
+	Delay = (int*)malloc(sizeof(int)*N*N);
+	for (int i = 0; i < N * N; i++) {
+		scanf("%d", &Delay[i]);
+	}
+	scanf("%d %d %d", &a, &b, &k);
+	t = validt(N, Delay, a, b, k);
+	printf("The Max Delay is %d", t);
 
 
 	return 0;
