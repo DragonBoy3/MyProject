@@ -17,15 +17,15 @@ int main() {
 	///*spt.print1();*/
 	//cout << spt.x << " " << spt.y << endl;
 
-	//test2
-	puddingleos::CDerived1 cd1;
-	puddingleos::CDerived2 cd2(1,2,3);
-	puddingleos::CDerived3 cd3;
-	puddingleos::CDerived4 cd4;
-	//cd1.print1();//class的private继承（默认继承），public的函数将不能被对象调用
-	cd2.print1();
-	cd3.print1();//struct的public继承（默认继承），public的函数保持public性质
-	//cd4.print1();//struct的private继承同class的private继承
+	////test2
+	//puddingleos::CDerived1 cd1;
+	//puddingleos::CDerived2 cd2(1,2,3);
+	//puddingleos::CDerived3 cd3;
+	//puddingleos::CDerived4 cd4;
+	////cd1.print1();//class的private继承（默认继承），public的函数将不能被对象调用
+	//cd2.print1();
+	//cd3.print1();//struct的public继承（默认继承），public的函数保持public性质
+	////cd4.print1();//struct的private继承同class的private继承
 
 	////test3
 	//puddingleos::CDerived2 *cd2 = new puddingleos::CDerived2();
@@ -223,21 +223,21 @@ int main() {
 	//cout << "Empty=" << s.IsEmpty() << endl;
 	//return 0;
 
-	//test3 中序遍历（递归与非递归）
-	int num[] = { 5,3,7,2,4,6,8,1 };
-	lgd::Tree tree(num, 8);
-	cout << "InOder: ";
-	tree.InOrderTree();
-	cout << "\nInOrderUnRec: ";
-	tree.InOrderTreeUnRec();
-	cout << "\nPreOrder: ";
-	tree.PreOrderTree();
-	cout << "\nPreOrderUnRec: ";
-	tree.PreOrderTreeUnRec();
-	cout << "\nPostOrder: ";
-	tree.PostOrderTree();
-	cout << "\nPostOrderUnRec: ";
-	tree.PostOrderTreeUnRec();
+	////test3 中序遍历（递归与非递归）
+	//int num[] = { 5,3,7,2,4,6,8,1 };
+	//lgd::Tree tree(num, 8);
+	//cout << "InOder: ";
+	//tree.InOrderTree();
+	//cout << "\nInOrderUnRec: ";
+	//tree.InOrderTreeUnRec();
+	//cout << "\nPreOrder: ";
+	//tree.PreOrderTree();
+	//cout << "\nPreOrderUnRec: ";
+	//tree.PreOrderTreeUnRec();
+	//cout << "\nPostOrder: ";
+	//tree.PostOrderTree();
+	//cout << "\nPostOrderUnRec: ";
+	//tree.PostOrderTreeUnRec();
 
 	//cout << lgd::max(1, 2) << endl;
 	//cout << lgd::max(1.1f, 2.2f) << endl;//隐式调用float类型的max
