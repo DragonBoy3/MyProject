@@ -3,6 +3,7 @@
 #include "chapter6.h"
 #include "chapter8.h"
 #include "chapter9.h"
+#include "newCoder.h"
 
 using namespace std;
 
@@ -282,6 +283,48 @@ int main() {
 	//t = validt(N, Delay, a, b, k);
 	//printf("The Max Delay is %d", t);
 
+	/*int a = 24;
+	printf("%o\n", a);
 
+	a = 9;
+
+	printf("%d\n", a += a -= a + a);
+
+
+	int count = 0;
+	for (int i = 10, j = 1;i = j = 0;i++, j--)
+		count++;
+	printf("%d\n", count);*/
+//
+//cout << "Please tap the fabonacci number:" << endl;
+//int n;
+//cin >> n;
+//int result[] = { 0,1 };
+//int n_dup = n;
+//cout << "Fabonacci Serial :";
+//if (n < 2) {
+//	while (n-- > 0)
+//		cout << n << " ";
+//	cout << "\nreslut is" << n << endl;
+//}
+//	
+//else {
+//	long long Fb0 = 0;
+//	long long Fb1 = 1;
+//	long long FbN = 0;
+//	cout << "0 1 ";
+//	for (int i = 2;i < n;i++) {
+//		FbN = Fb0 + Fb1;
+//		Fb0 = Fb1;
+//		Fb1 = FbN;
+//		cout << FbN << " ";
+//	}
+//	cout << "\nresult is " << FbN << endl;
+//}
+cout << "Please input a num:";
+int n;
+cin >> n;
+Solution* ptr1 = new Solution;
+cout << "message count is:" << (*ptr1).messageCount(n) << endl;
 	return 0;
 }
