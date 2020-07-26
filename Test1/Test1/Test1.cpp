@@ -1,5 +1,7 @@
 ﻿#define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>
+#include "musicfunc.h"
+#include "parameter.h"
 #include <vector>
 
 
