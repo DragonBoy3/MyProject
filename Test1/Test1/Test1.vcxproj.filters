@@ -30,6 +30,9 @@
     <ClCompile Include="newCoder.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="main_tmp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter6.h">
