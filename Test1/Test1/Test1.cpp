@@ -16,5 +16,9 @@ int main() {
 		}
 	}
 
+	cout << "result." << endl;
+
+	cout << "conflict line" << endl;
+
 	return 0;
 }
