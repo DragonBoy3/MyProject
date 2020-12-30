@@ -1,5 +1,7 @@
 ﻿#define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>
+#include "musicfunc.h"
+#include "parameter.h"
 #include <vector>
 
 
@@ -14,7 +16,7 @@ int main() {
 		}
 	}
 
-	cout << "SURFACE_CMIT1" << endl;
+	cout << "Laptop_branch_merge" << endl;
 
 	return 0;
 }
