@@ -16,7 +16,7 @@ int main() {
 		}
 	}
 
-	cout << "Laptop_branch_merge" << endl;
+	cout << "local_merge+2" << endl;
 
 	return 0;
 }
