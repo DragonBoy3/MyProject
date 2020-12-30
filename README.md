@@ -4,3 +4,4 @@
 3. test3 branch dev
 4. test3 branch master
 5. test4 bug is off
+6. conflict test
