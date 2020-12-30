@@ -1,7 +1,7 @@
 ﻿#define _CRT_SECURE_NO_DEPRECATE
 #include <iostream>
-#include "musicfunc.h"
-#include "parameter.h"
+//#include "musicfunc.h"
+//#include "parameter.h"
 #include <vector>
 
 
@@ -15,8 +15,6 @@ int main() {
 			maze[m][n] = m * maze[m].size() + n;
 		}
 	}
-
-	cout << "local_merge+2" << endl;
 
 	return 0;
 }
