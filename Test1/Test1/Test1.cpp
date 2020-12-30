@@ -14,7 +14,14 @@ int main() {
 		}
 	}
 
-	cout << "Surface_coflict1" << endl;
+	cout << "result." << endl;
+
+	cout << "conflict_test" << endl;
+
+	cout << "conflict_line2" << endl;
+	cout << "conflict_line" << endl;
+
+	cout << "conflict_line3" << endl;
 
 	return 0;
 }
