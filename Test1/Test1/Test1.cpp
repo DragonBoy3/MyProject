@@ -22,5 +22,7 @@ int main() {
 
 	cout << "conflict_line3" << endl;
 
+	cout << "conflict_laptop+1" << endl;
+
 	return 0;
 }
