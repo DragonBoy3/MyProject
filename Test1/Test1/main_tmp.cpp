@@ -23,10 +23,10 @@ using namespace std;
 //puddingleos::CDerived2 cd2(1,2,3);
 //puddingleos::CDerived3 cd3;
 //puddingleos::CDerived4 cd4;
-////cd1.print1();//classµÄprivate¼Ì³Ğ£¨Ä¬ÈÏ¼Ì³Ğ£©£¬publicµÄº¯Êı½«²»ÄÜ±»¶ÔÏóµ÷ÓÃ
+////cd1.print1();//classçš„privateç»§æ‰¿ï¼ˆé»˜è®¤ç»§æ‰¿ï¼‰ï¼Œpublicçš„å‡½æ•°å°†ä¸èƒ½è¢«å¯¹è±¡è°ƒç”¨
 //cd2.print1();
-//cd3.print1();//structµÄpublic¼Ì³Ğ£¨Ä¬ÈÏ¼Ì³Ğ£©£¬publicµÄº¯Êı±£³ÖpublicĞÔÖÊ
-////cd4.print1();//structµÄprivate¼Ì³ĞÍ¬classµÄprivate¼Ì³Ğ
+//cd3.print1();//structçš„publicç»§æ‰¿ï¼ˆé»˜è®¤ç»§æ‰¿ï¼‰ï¼Œpublicçš„å‡½æ•°ä¿æŒpublicæ€§è´¨
+////cd4.print1();//structçš„privateç»§æ‰¿åŒclassçš„privateç»§æ‰¿
 
 ////test3
 //puddingleos::CDerived2 *cd2 = new puddingleos::CDerived2();
@@ -35,9 +35,9 @@ using namespace std;
 //cout << endl;
 //puddingleos::Cpoint* cp1 = new puddingleos::CDerived2();
 //cp1->Dosomething();
-//delete cp1;//Èç¹û»ùÀàÎö¹¹º¯ÊıÃ»ÓĞÓÃvirtualĞŞÊÎ£¬ÔòÉ¾³ıÊ±²»»áµ÷ÓÃ¶ÔÏóCDerived2µÄÎö¹¹º¯Êı£¬µ¼ÖÂÄÚ´æĞ¹Â©
+//delete cp1;//å¦‚æœåŸºç±»ææ„å‡½æ•°æ²¡æœ‰ç”¨virtualä¿®é¥°ï¼Œåˆ™åˆ é™¤æ—¶ä¸ä¼šè°ƒç”¨å¯¹è±¡CDerived2çš„ææ„å‡½æ•°ï¼Œå¯¼è‡´å†…å­˜æ³„æ¼
 
-////test4:¿¼²ìÎö¹¹º¯ÊıÖ´ĞĞË³Ğò£ºµ¹ĞòÖ´ĞĞ¡¢ÏÈ×Óºó¸¸
+////test4:è€ƒå¯Ÿææ„å‡½æ•°æ‰§è¡Œé¡ºåºï¼šå€’åºæ‰§è¡Œã€å…ˆå­åçˆ¶
 //puddingleos::B obj1(1, 2);
 //puddingleos::B obj2(3, 4);
 
@@ -46,12 +46,12 @@ using namespace std;
 //puddingleos::Cpoint cp2 = cp1;
 //cout << "before fun1()..." << endl;
 //puddingleos::fun1(cp1);
-//puddingleos::Cpoint cp3 = puddingleos::fun2(); //²ÉÓÃÄ¬ÈÏµÄ¸´ÖÆ¹¹Ôìº¯Êı£¬cp3Óëfun2()Éú³ÉµÄclassÖ¸ÏòÄÚ´æµÄÍ¬Ò»¸öÎ»ÖÃ
+//puddingleos::Cpoint cp3 = puddingleos::fun2(); //é‡‡ç”¨é»˜è®¤çš„å¤åˆ¶æ„é€ å‡½æ•°ï¼Œcp3ä¸fun2()ç”Ÿæˆçš„classæŒ‡å‘å†…å­˜çš„åŒä¸€ä¸ªä½ç½®
 //cout << "After fun2()..." << endl;
-////Ç³¸´ÖÆ£ºĞÂ¾ÉÁ½¸ö¶ÔÏóÖ¸ÏòÍ¬Ò»¸öÍâ²¿ÄÚÈİ£»Éî¸´ÖÆ£ºÎªĞÂ¶ÔÏóÖÆ×÷ÁËÍâ²¿¶ÔÏóµÄ¶ÀÁ¢¸´ÖÆ
+////æµ…å¤åˆ¶ï¼šæ–°æ—§ä¸¤ä¸ªå¯¹è±¡æŒ‡å‘åŒä¸€ä¸ªå¤–éƒ¨å†…å®¹ï¼›æ·±å¤åˆ¶ï¼šä¸ºæ–°å¯¹è±¡åˆ¶ä½œäº†å¤–éƒ¨å¯¹è±¡çš„ç‹¬ç«‹å¤åˆ¶
 
 ////test6
-////¼Ì³ĞÀàµÄ¸´ÖÆº¯Êı£¬¸´ÖÆ¸¸Ààprivate±äÁ¿
+////ç»§æ‰¿ç±»çš„å¤åˆ¶å‡½æ•°ï¼Œå¤åˆ¶çˆ¶ç±»privateå˜é‡
 //puddingleos::Cpoint cp1(1, 2);
 //puddingleos::CDerived2 cd1(3, 4, 5);
 //cout << "-----------" << endl;
@@ -59,44 +59,44 @@ using namespace std;
 //cout << "-----------" << endl;
 
 ////test7
-//// C++×Ö·û´®ÀàĞÍµÄ¼Ì³Ğ
+//// C++å­—ç¬¦ä¸²ç±»å‹çš„ç»§æ‰¿
 //puddingleos::MyString s1("Hello");
 //puddingleos::MyString s2("World");
 //puddingleos::MyString s3(s1);
 //s3 = s2;
 
 ////test8
-////new¶ÔÏóÊ±»áÉú³ÉÒ»¸öÁÙÊ±¶ÔÏó£¬Æä´óĞ¡Ä¬ÈÏÎª1£¬ÖØ¹¹ºó¿ÉÒÔÉèÖÃ¶ÔÏó´óĞ¡
-////ÏÈµ÷ÓÃnewÉú³ÉÓÃÀ´´æ´¢¶ÔÏóµÄµØÖ·£¬ÔÙµ÷ÓÃÄ¬ÈÏ¹¹Ôìº¯Êı½«ÁÙÊ±¶ÔÏó·ÅÈë
+////newå¯¹è±¡æ—¶ä¼šç”Ÿæˆä¸€ä¸ªä¸´æ—¶å¯¹è±¡ï¼Œå…¶å¤§å°é»˜è®¤ä¸º1ï¼Œé‡æ„åå¯ä»¥è®¾ç½®å¯¹è±¡å¤§å°
+////å…ˆè°ƒç”¨newç”Ÿæˆç”¨æ¥å­˜å‚¨å¯¹è±¡çš„åœ°å€ï¼Œå†è°ƒç”¨é»˜è®¤æ„é€ å‡½æ•°å°†ä¸´æ—¶å¯¹è±¡æ”¾å…¥
 //puddingleos::Blanks* a5 = new (0xa5) puddingleos::Blanks;
 
 ////test9
-////protected¼Ì³ĞÓëprivate¡¢public¼Ì³ĞµÄÇø±ğ
+////protectedç»§æ‰¿ä¸privateã€publicç»§æ‰¿çš„åŒºåˆ«
 //class puddingleos::A a;
 //class puddingleos::C c;
 //a.print();
 //c.print();
 
 ////test10
-////»ùÀàµÄprivateĞéº¯Êı¿ÉÒÔ±»×ÓÀàpublicÖØĞ´£¬²¢¶¯Ì¬°ó¶¨
+////åŸºç±»çš„privateè™šå‡½æ•°å¯ä»¥è¢«å­ç±»publicé‡å†™ï¼Œå¹¶åŠ¨æ€ç»‘å®š
 //puddingleos::Cpoint cp1;
 //puddingleos::CDerived2 cd2;
 //puddingleos::Cpoint* p = &cd2;
 //cp1.fun();
 //cd2.fun();
 //p->fun();
-//cp1.print1();//²»ÊÇĞéº¯Êı²»»á±»ÖØĞ´£¬Ö»ÄÜµ÷ÓÃ
+//cp1.print1();//ä¸æ˜¯è™šå‡½æ•°ä¸ä¼šè¢«é‡å†™ï¼Œåªèƒ½è°ƒç”¨
 //cd2.print1();
 //p->print1();
 
 ////test11
-////¼Ì³ĞÓë×éºÏµÄÇø±ğ
+////ç»§æ‰¿ä¸ç»„åˆçš„åŒºåˆ«
 //puddingleos::Car_pri car_pri;
 //puddingleos::Car_comp car_comp;
 //car_pri.start();
 //car_comp.start();
-////ÉÏÊö´úÂëÃ»ÓĞÇø±ğ£¬ÔÚÔËĞĞ¹ı³ÌºÍÊä³ö½á¹ûÉÏ
-////¼Ì³ĞÄÜ¹»¸²Ğ´»ùÀàµÄĞéº¯Êıpublic virtual£¨ÌåÏÖ±àÒëÔËĞĞµÄ¶àÌ¬ĞÔ£©
+////ä¸Šè¿°ä»£ç æ²¡æœ‰åŒºåˆ«ï¼Œåœ¨è¿è¡Œè¿‡ç¨‹å’Œè¾“å‡ºç»“æœä¸Š
+////ç»§æ‰¿èƒ½å¤Ÿè¦†å†™åŸºç±»çš„è™šå‡½æ•°public virtualï¼ˆä½“ç°ç¼–è¯‘è¿è¡Œçš„å¤šæ€æ€§ï¼‰
 
 ////test12
 //puddingleos::CDerived2 cd2;
@@ -108,10 +108,10 @@ using namespace std;
 //puddingleos::printDosomething(cd2);
 //puddingleos::printDosomething(cd22);
 //puddingleos::printDosomething(cp1);
-////Ò»°ãÀ´Ëµ¶àÌ¬º¯Êı»ùÀà¶¼Òª¼Óvirtual£¬ÅÉÉú×ÓÀà¿ÉÒÔ²»¼Ó£¬Ò»°ãÒ²¼ÓÉÏ·½±ãÅÉÉú×ÓÀà¼ÌĞøÅÉÉú
+////ä¸€èˆ¬æ¥è¯´å¤šæ€å‡½æ•°åŸºç±»éƒ½è¦åŠ virtualï¼Œæ´¾ç”Ÿå­ç±»å¯ä»¥ä¸åŠ ï¼Œä¸€èˆ¬ä¹ŸåŠ ä¸Šæ–¹ä¾¿æ´¾ç”Ÿå­ç±»ç»§ç»­æ´¾ç”Ÿ
 
 ////test13
-////¶àÖØ¼Ì³Ğ£¬×ÓÀàµÄ¼Ì³Ğ£¬»á³öÏÖ×ÓÀàº¯Êı³åÍ»ÎÊÌâ£¬¿ÉÒÔÍ¨¹ıÖ¸¶¨¸¸ÀàÃû»òÕß¸¸Ààvirtual¼Ì³Ğ»ùÀàÀ´½â¾ö
+////å¤šé‡ç»§æ‰¿ï¼Œå­ç±»çš„ç»§æ‰¿ï¼Œä¼šå‡ºç°å­ç±»å‡½æ•°å†²çªé—®é¢˜ï¼Œå¯ä»¥é€šè¿‡æŒ‡å®šçˆ¶ç±»åæˆ–è€…çˆ¶ç±»virtualç»§æ‰¿åŸºç±»æ¥è§£å†³
 //puddingleos::Car_pri_sri cps1;
 //cps1.car_pri_print();
 //cps1.car_sri_print();
@@ -120,7 +120,7 @@ using namespace std;
 ////cps1.Car_sri::start();
 
 ////test14
-////³éÏó¼Ì³ĞĞèÒªÔÚ×ÓÀàÀïÊµÏÖ
+////æŠ½è±¡ç»§æ‰¿éœ€è¦åœ¨å­ç±»é‡Œå®ç°
 //puddingleos::Shape* sp;
 //sp = &puddingleos::Rectangle(3,4);
 //sp->Display();
@@ -135,10 +135,10 @@ using namespace std;
 //puddingleos2::CDerived3 cd3;
 //puddingleos2::CDerived4 cd4;
 //cout << sizeof(cd1) << endl;
-////cd1.print();//³ÉÔ±Ë½ÓĞ»¯£¬²»ÄÜÍ¨¹ı¶ÔÏóÀ´µ÷ÓÃ
+////cd1.print();//æˆå‘˜ç§æœ‰åŒ–ï¼Œä¸èƒ½é€šè¿‡å¯¹è±¡æ¥è°ƒç”¨
 //cd2.print();
 //cd3.print();
-////cd4.print();//³ÉÔ±Ë½ÓĞ»¯£¬²»ÄÜÍ¨¹ı¶ÔÏóÀ´µ÷ÓÃ
+////cd4.print();//æˆå‘˜ç§æœ‰åŒ–ï¼Œä¸èƒ½é€šè¿‡å¯¹è±¡æ¥è°ƒç”¨
 
 //puddingleos2::Obj obj(2);
 //obj.print();
@@ -150,14 +150,14 @@ using namespace std;
 //N.GetSum();
 
 ////test1
-////explicitĞŞÊÎµÄ¹¹Ôìº¯Êı²»ÄÜ±»ÒşÊ½µ÷ÓÃ
+////explicitä¿®é¥°çš„æ„é€ å‡½æ•°ä¸èƒ½è¢«éšå¼è°ƒç”¨
 //puddingleos2::Test1 t1 = 12;
-////puddingleos2::Test2 t2 = 12;//±àÒë³ö´í
+////puddingleos2::Test2 t2 = 12;//ç¼–è¯‘å‡ºé”™
 //puddingleos2::Test2 t3(12);
 
 ////test2
-////ÁÙÊ±±äÁ¿ÔÚµ÷ÓÃ¹¹Ôìº¯Êı£¨°üÀ¨ÆÕÍ¨¡¢¸´ÖÆ¹¹Ôì²ÎÊı£©Ê±Éú³É£¬²¢ÔÚÉú³ÉÊµ¼Ê¶ÔÏóºóÏú»Ù
-////¹¹Ôìº¯ÊıÓëÎö¹¹º¯Êı³É¶Ô³öÏÖ
+////ä¸´æ—¶å˜é‡åœ¨è°ƒç”¨æ„é€ å‡½æ•°ï¼ˆåŒ…æ‹¬æ™®é€šã€å¤åˆ¶æ„é€ å‚æ•°ï¼‰æ—¶ç”Ÿæˆï¼Œå¹¶åœ¨ç”Ÿæˆå®é™…å¯¹è±¡åé”€æ¯
+////æ„é€ å‡½æ•°ä¸ææ„å‡½æ•°æˆå¯¹å‡ºç°
 ////puddingleos2::B t0(1);
 //puddingleos2::B t1 = puddingleos2::play(5);
 //puddingleos2::B t2 = puddingleos2::play(t1);
@@ -165,9 +165,9 @@ using namespace std;
 //puddingleos2::B t4 = puddingleos2::play(10);
 
 ////test3
-////ÁÙÊ±±äÁ¿Óë¾²Ì¬³ÉÔ±
-////µ÷ÓÃ¸´ÖÆ¹¹Ôìº¯ÊıÊ±¾Í»áÉú³ÉÁÙÊ±±äÁ¿£¬Òò´Ë¾¡Á¿±ÜÃâclass¼ä¸´ÖÆĞĞÎª
-////»òÕß²ÉÓÃÒıÓÃµÄ·½Ê½´«µİ²ÎÊı
+////ä¸´æ—¶å˜é‡ä¸é™æ€æˆå‘˜
+////è°ƒç”¨å¤åˆ¶æ„é€ å‡½æ•°æ—¶å°±ä¼šç”Ÿæˆä¸´æ—¶å˜é‡ï¼Œå› æ­¤å°½é‡é¿å…classé—´å¤åˆ¶è¡Œä¸º
+////æˆ–è€…é‡‡ç”¨å¼•ç”¨çš„æ–¹å¼ä¼ é€’å‚æ•°
 //puddingleos2::B b1;
 //b1.print();
 //puddingleos2::B b2 = puddingleos2::play(b1);
@@ -176,7 +176,7 @@ using namespace std;
 //b3.print();
 
 ////test4
-////ÖØÔØ²Ù×÷·ûÊµÏÖ×Ö·û´®Æ´½Ó
+////é‡è½½æ“ä½œç¬¦å®ç°å­—ç¬¦ä¸²æ‹¼æ¥
 //puddingleos2::MyString a((char *)"Hello ");
 //puddingleos2::MyString b((char *)"World");
 //puddingleos2::MyString c((char *)"");
@@ -190,7 +190,7 @@ using namespace std;
 
 //chapter8
 //test1
-//µ¥Á´±í
+//å•é“¾è¡¨
 //int pos;
 //int data;
 //lgd::node* list1 = lgd::create();
@@ -208,12 +208,12 @@ using namespace std;
 //lgd::node* list2 = lgd::sort_increase();
 //lgd::printlist(list2);
 
-////test2 ÁĞ¶ÓÊµÏÖÕ»²Ù×÷
+////test2 åˆ—é˜Ÿå®ç°æ ˆæ“ä½œ
 //lgd::MyData data(0);
 //lgd::MyStack s;
-//s.push(lgd::MyData(1));//½øÕ»Ò»´Î
-//s.push(lgd::MyData(2));//½øÕ»¶ş´Î
-//s.push(lgd::MyData(3));//½øÕ»Èı´Î
+//s.push(lgd::MyData(1));//è¿›æ ˆä¸€æ¬¡
+//s.push(lgd::MyData(2));//è¿›æ ˆäºŒæ¬¡
+//s.push(lgd::MyData(3));//è¿›æ ˆä¸‰æ¬¡
 
 //s.pop(&data);
 //cout << "pop" << data.data << endl;
@@ -224,7 +224,7 @@ using namespace std;
 //cout << "Empty=" << s.IsEmpty() << endl;
 //return 0;
 
-////test3 ÖĞĞò±éÀú£¨µİ¹éÓë·Çµİ¹é£©
+////test3 ä¸­åºéå†ï¼ˆé€’å½’ä¸éé€’å½’ï¼‰
 //int num[] = { 5,3,7,2,4,6,8,1 };
 //lgd::Tree tree(num, 8);
 //cout << "InOder: ";
@@ -241,19 +241,19 @@ using namespace std;
 //tree.PostOrderTreeUnRec();
 
 //cout << lgd::max(1, 2) << endl;
-//cout << lgd::max(1.1f, 2.2f) << endl;//ÒşÊ½µ÷ÓÃfloatÀàĞÍµÄmax
-//cout << lgd::max(1.11l, 2.22l) << endl;//ÒşÊ½µ÷ÓÃdoubleÀàĞÍµÄmax
-//cout << lgd::max('A', 'C') << endl;//ÒşÊ½µ÷ÓÃcharÀàĞÍµÄmax
-//cout << lgd::max<int>(1, 2.0) << endl;//Ö¸¶¨ÎªintÀàĞÍ
+//cout << lgd::max(1.1f, 2.2f) << endl;//éšå¼è°ƒç”¨floatç±»å‹çš„max
+//cout << lgd::max(1.11l, 2.22l) << endl;//éšå¼è°ƒç”¨doubleç±»å‹çš„max
+//cout << lgd::max('A', 'C') << endl;//éšå¼è°ƒç”¨charç±»å‹çš„max
+//cout << lgd::max<int>(1, 2.0) << endl;//æŒ‡å®šä¸ºintç±»å‹
 //
-////test 5 ·ºĞÍ±à³Ì Ä£°åÀà
+////test 5 æ³›å‹ç¼–ç¨‹ æ¨¡æ¿ç±»
 //Point_T<int, int> intPt1(1, 2);
 //Point_T<int, int> intPt2(3, 4);
 //Point_T<float, float> floatPt1(1.1f, 2.2f);
 //Point_T<float, float> floatPt2(3.3f, 4.4f);
 //Point_T<int, int> intPt3;
 //Point_T<float, float> floatPt3;
-//intPt3 = (intPt1+intPt2);//À¨ºÅ²»ÄÜÈ¥µô£¬ÖØÔØÔËËã·ûÓÅÏÈ¼¶ÓëÔ­ÔËËã·û²»Í¬
+//intPt3 = (intPt1+intPt2);//æ‹¬å·ä¸èƒ½å»æ‰ï¼Œé‡è½½è¿ç®—ç¬¦ä¼˜å…ˆçº§ä¸åŸè¿ç®—ç¬¦ä¸åŒ
 //floatPt3 =(floatPt1 + floatPt2);
 //cout << "(" << (intPt3.a) << "," << (intPt3.b) << ")" << endl;
 //cout << "(" << floatPt3.a << "," << floatPt3.b << ")" << endl;
@@ -267,7 +267,7 @@ using namespace std;
 ////bubbleSort(a, sizeof(a) / sizeof(a[0]));
 ////quickSort(a, 0, sizeof(a) / sizeof(a[0])-1);
 ////selectSort(a, sizeof(a) / sizeof(a[0]));
-////heapSort(a, sizeof(a) / sizeof(a[0]));//ÀûÓÃ¶ÑµÄĞÔÖÊ£¬½«¶Ñ¶¥µÄÊı¾İÓë¶ÑÎ²½øĞĞµ÷»»£¬²¢ÖØ½¨Ç°n¸öÊı¾İ¶Ñ£¬×îºóÖ»Ê£ÏÂ¶Ñ¶¥£¬¼´Íê³ÉÒ»´Î¶ÑÅÅĞò
+////heapSort(a, sizeof(a) / sizeof(a[0]));//åˆ©ç”¨å †çš„æ€§è´¨ï¼Œå°†å †é¡¶çš„æ•°æ®ä¸å †å°¾è¿›è¡Œè°ƒæ¢ï¼Œå¹¶é‡å»ºå‰nä¸ªæ•°æ®å †ï¼Œæœ€ååªå‰©ä¸‹å †é¡¶ï¼Œå³å®Œæˆä¸€æ¬¡å †æ’åº
 //mergeSort(a, sizeof(a) / sizeof(a[0]));
 //cout << "after insert sort: ";
 //print_array(a, sizeof(a) / sizeof(a[0]));
